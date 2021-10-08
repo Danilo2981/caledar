@@ -18,6 +18,17 @@
                 </div>
             </div>
         </div>
+        @foreach ($usuariosArray as $usuario)
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item active">{{ $usuario['nombre'] }}</li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
+        @endforeach
     </div>
 </div>
 @endsection
