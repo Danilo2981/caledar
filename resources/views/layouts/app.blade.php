@@ -19,6 +19,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    @livewireStyles
+
     @yield('scripts')
 </head>
 <body>
@@ -83,5 +85,8 @@
             </div>    
         </main>
     </div>
+
+    @livewireScripts
+
 </body>
 </html>

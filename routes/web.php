@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\EventosController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventosController;
+use App\Http\Controllers\ReferenciaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Auth::routes();
 Route::resource('eventos', EventosController::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/referencias', [ReferenciaController::class, 'index']);
